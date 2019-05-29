@@ -9,6 +9,7 @@ RUN yum install -y \
     root \
     root-genvector \
     root-graf3d-eve \
+    root-gui-html \
     root-montecarlo-eg \
     tcl \
     wget \
