@@ -1,6 +1,6 @@
-FROM fedora:30
+FROM fedora:34
 
-RUN yum install -y \
+RUN dnf install -y \
     cmake \
     gcc-c++ \
     git \
@@ -16,10 +16,4 @@ RUN yum install -y \
     which \
     zlib-devel
 
-COPY ROOTConfig-targets-relwithdebinfo.cmake /usr/share/root/cmake/
-
-ENV ROOTSYS=/opt/root
-ENV PATH=$ROOTSYS/bin:$PATH
-ENV PYTHONPATH=$ROOTSYS/lib:$PYTHONPATH
-ENV LD_LIBRARY_PATH=$ROOTSYS/lib:$LD_LIBRARY_PATH
 ENV PYTHIA8=/usr
