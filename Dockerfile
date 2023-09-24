@@ -1,4 +1,4 @@
-FROM fedora:34
+FROM fedora:38
 
 RUN dnf install -y \
     cmake \
@@ -6,6 +6,7 @@ RUN dnf install -y \
     git \
     make \
     pythia8-devel \
+    python3-root \
     root \
     root-genvector \
     root-graf3d-eve \
